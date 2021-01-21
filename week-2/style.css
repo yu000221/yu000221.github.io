@@ -91,94 +91,122 @@ body {
    text-decoration: none;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/* use margin to change nav text position */
 #nav.nav :nth-child(1){
    margin-left: -4rem;
 }
+/* set nav:hover style */
 #nav.nav .nav-link:hover{
    color:olive;
    animation-name: nav-link-hover;
 	animation-duration: 300ms;
 	animation-fill-mode: forwards;
 }
-/* set main style */
+/* set main page width, position and background-color */
 #main.main{
   width:100%;
   margin: 0px auto;
   background-color: olive;
 }
-/* set Home page style */
+/* set Home page background-color and text position */
 #home.home{
    background-color:olive;
    text-align: center;
 }
+/* set h1 font-size, font-family, color and padding */
 h1.page-title{
    font-size: 3rem;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color:white;
    padding:2rem;
 }
+/* set paragraph of home page's font-family, color and font-size */
 #home>p{
    font-family:Arial, Helvetica, sans-serif;
    color:orange;
    font-size:1.5rem;
 }
+/* set about page style */
 #about.about{
    background-color:white;
+   /* add a border */
    border:6rem solid orange;
+   /* set text position */
    text-align:center;
    margin:0 auto;
    font-size:1.5rem;
+   /* add padding */
    padding:1rem 2rem;
+   /* change font color */
    color:olive;
 }
+/* set h2 of about page's style */
 .about>.section-title{
+   /* change font-size, font-family, color */
    font-size:3rem;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color:white;
+   /* add padding */
    padding:2rem;
    background-color: olive;
+   /* add border */
    border:2rem solid white;
 }
+/* set image size */
 img.about-image{
    width:30%;
 }
+/* set contact page style */
 #contact.contact{
    background-color:olive;
+   /* set text position */
    text-align:center;
    margin:0 auto;
+   /* set font-size, padding, font-family and color */
    font-size:1.5rem;
    padding:1rem 6rem;
    color:orange;
+   font-family:Arial, Helvetica, sans-serif;
 }
+/* set h2 of contact page's style */
 .contact>.section-title{
    font-size:3rem;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color:white;
    padding:2rem;
 }
+/* set form style */
 form.contact-form{
    text-align: center;
+   /* set width */
    width:80%;
+   /* add padding */
    padding-top:3rem;
    padding-bottom: 3rem;
+   /* set text position */
    text-align: left;
    color:white;
+   /* add border */
    border:0.5rem solid white;
    background-color: orange;
 }
+/* set label style */
 label.contact-form-label{
    font-size:1.5rem;
    font-family: Arial, Helvetica, sans-serif;
 }
+/* set input style */
 input.contact-form-input,
 textarea.contact-form-input{
    margin-right:10rem;
    width:92%;
 }
+/* set button style */
 button{
    width:10rem;
    font-family: Arial, Helvetica, sans-serif;
 }
+/* set footer style */
 footer{
    background-color:orange;
    color:white;
@@ -186,7 +214,75 @@ footer{
    padding:2rem;
 }
 /********* Desktop style *********/
+
+/* set style when screen width is between 760px and 1200px */
+@media (min-width:760px) and (max-width:1200px){
+   /* set nav style */
+   #nav.nav .nav-link{
+      font-size: 4rem;
+      margin:1rem;
+      padding:3rem;
+   }
+   /* set home page style */
+   #home.home{
+      height:50rem;
+   }
+   /* set h1 style */
+   h1.page-title{
+      font-size: 4rem;
+      padding-top:7rem;
+   }
+   /* set paragraph of home page's style */
+   #home>p{
+      font-size:2.5rem;
+      width:70%;
+      padding-left:10rem;
+      padding-top:2rem;
+   }
+   /* set about page style */
+   #about.about{
+      border:8rem solid orange;
+      font-size:2.5rem;
+      height:58rem;
+   }
+   /* set h2 of about page's style */
+   .about>.section-title{
+      font-size:4rem;
+   }
+   /* set image style */
+   img.about-image{
+      width:20%;
+      height:auto;
+   }
+   /* set contact page style */
+   #contact.contact{
+      font-size:2.5rem;
+   }
+   /* set h2 of contact page's style */
+   #contact>.section-title{
+      font-size:4rem;
+   }
+   /* set label style */
+   label.contact-form-label{
+      font-size:2.5rem;
+   }
+   /* set button style */
+   button{
+      font-size:1.7rem;
+      width:17rem;
+   }
+   /* set footer style */
+   footer{
+      width:100%;
+      margin:0 auto;
+      max-width:1160px;
+      font-size:1.8rem;
+   }
+   
+}
+/* set style when the screen width is greater than 1200px */
 @media (min-width:1200px){
+   /* set nav style */
    #nav.nav .nav-link{
       font-size: 5rem;
       margin:5rem;
@@ -195,13 +291,16 @@ footer{
    #main.main{
       width:100vw;
     }
-    #home.home{
+    /* set home page style */
+   #home.home{
       height:58rem;
    }
+   /* set h1 style */
    h1.page-title{
       font-size: 5rem;
       padding-top:10rem;
    }
+   /* set paragraph of home page's style */
    #home>p{
       font-size:3.5rem;
       width:70%;
@@ -214,84 +313,39 @@ footer{
       font-size:3.5rem;
       height:68rem;
    }
+   /* set about page style */
    .about>.section-title{
       font-size:5rem;
    }
+   /* set image style */
    img.about-image{
       width:30%;
       height:40%;
    }
+   /* set contact page style */
    #contact.contact{
       font-size:3.5rem;
       height:100%;
    }
+   /* set h2 of contact page's style */
    #contact>.section-title{
       font-size:5rem;
    }
+   /* set label style */
    label.contact-form-label{
       font-size:3rem;
    }
+   /* set button style */
    button{
       font-size:2rem;
       width:20rem;
    }
+   /* set footer style */
    footer{
       width:100%;
       margin:0 auto;
       max-width:1160px;
       font-size:2rem;
-   }
-   
-}
-@media (min-width:760px) and (max-width:1200px){
-   #nav.nav .nav-link{
-      font-size: 4rem;
-      margin:1rem;
-      padding:3rem;
-   }
-   #home.home{
-      height:50rem;
-   }
-   h1.page-title{
-      font-size: 4rem;
-      padding-top:7rem;
-   }
-   #home>p{
-      font-size:2.5rem;
-      width:70%;
-      padding-left:10rem;
-      padding-top:2rem;
-   }
-   #about.about{
-      border:8rem solid orange;
-      font-size:2.5rem;
-      height:58rem;
-   }
-   .about>.section-title{
-      font-size:4rem;
-   }
-   img.about-image{
-      width:20%;
-      height:auto;
-   }
-   #contact.contact{
-      font-size:2.5rem;
-   }
-   #contact>.section-title{
-      font-size:4rem;
-   }
-   label.contact-form-label{
-      font-size:2.5rem;
-   }
-   button{
-      font-size:1.7rem;
-      width:17rem;
-   }
-   footer{
-      width:100%;
-      margin:0 auto;
-      max-width:1160px;
-      font-size:1.8rem;
    }
    
 }

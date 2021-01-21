@@ -58,7 +58,7 @@
 html{
    /* set html font size */
    font-size: 10px;
-   border:border-size;
+   box-sizing: border-box;
 }
 /* set body style */
 body {
@@ -82,7 +82,7 @@ body {
    text-align: center;
    /* set nav background color */
 	background-color: orange;
-   border:0.1rem solid white;
+   border:0.1rem solid orange;
 }
 #nav.nav .nav-link{
    /* set font color, size, font-family */

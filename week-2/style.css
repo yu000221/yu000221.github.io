@@ -82,7 +82,7 @@ body {
    text-align: center;
    /* set nav background color */
 	background-color: orange;
-   border:0.1rem solid orange;
+   border:0.1rem solid white;
 }
 #nav.nav .nav-link{
    /* set font color, size, font-family */

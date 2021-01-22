@@ -73,7 +73,7 @@ body {
   box-sizing: inherit;
   line-height: inherit;
 }
-/* set nav style */
+/* set nav style, let nav bar on the top center in this page */
 #nav.nav{
    display:inline-block;
    width: 100%;
@@ -91,9 +91,11 @@ body {
    text-decoration: none;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/* change nav text position */
 #nav.nav :nth-child(1){
    margin-left: 4rem;
 }
+/* change a:hover color */
 #nav.nav .nav-link:hover{
    color:olive;
    animation-name: nav-link-hover;
@@ -103,27 +105,39 @@ body {
 /* set main style */
 #main.main{
   width:100%;
+  /* use margin to let main page is in the center */
   margin: 0px auto;
+  /* change main page background color */
   background-color: olive;
 }
 /* set Home page style */
 #home.home{
+   /* change home page background color */
    background-color:olive;
+   /* let home page text is in the center */
    text-align: center;
 }
+/* set h1 style */
 h1.page-title{
+   /* change font-size, font-family, color and padding */
    font-size: 3rem;
+   /* using the same font-family with nav */
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color:white;
    padding:2rem;
 }
+/* set paragraph of home page's style */
 #home>p{
+   /* change font-family, color and font-size */
+   /* using another font-family */
    font-family:Arial, Helvetica, sans-serif;
    color:orange;
    font-size:1.5rem;
 }
+/* set about page style */
 #about.about{
    background-color:white;
+   /* add border, let the layout more hierarchical sense */
    border:6rem solid orange;
    text-align:center;
    margin:0 auto;
@@ -131,17 +145,22 @@ h1.page-title{
    padding:1rem 2rem;
    color:olive;
 }
+/* set about page title style */
+/* let it is same with h1 */
 .about>.section-title{
    font-size:3rem;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color:white;
    padding:2rem;
    background-color: olive;
+   /* add border, let title background color become smaller */
    border:2rem solid white;
 }
+/* set image size, let the image change size according to the size of the screen */
 img.about-image{
    width:30%;
 }
+/* set contact page style */
 #contact.contact{
    background-color:olive;
    text-align:center;
@@ -150,6 +169,8 @@ img.about-image{
    padding:1rem 6rem;
    color:orange;
 }
+/* set contact page title style */
+/* let it is same with h1 */
 .contact>.section-title{
    font-size:3rem;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -161,25 +182,32 @@ form.contact-form{
    width:95%;
    padding-top:3rem;
    padding-bottom: 3rem;
+   /* change form text position */
    text-align: left;
    color:white;
+   /* add border, highlight the form */
    border:0.5rem solid white;
    background-color: orange;
 }
+/* set label style */
 label.contact-form-label{
    font-size:1.5rem;
+   /* change font-family, let it is same with paragraph font-family */
    font-family: Arial, Helvetica, sans-serif;
 }
+/* change input and textarea position */
 input.contact-form-input,
 textarea.contact-form-input{
    margin-right:10rem;
    width:100%;
 }
+/* change button font-family and font-size */
 button{
    width:10rem;
    font-family: Arial, Helvetica, sans-serif;
    font-size:1rem;
 }
+/* set footer style */
 footer{
    background-color:orange;
    color:white;
@@ -187,6 +215,7 @@ footer{
    padding:2rem;
 }
 /********* Desktop style *********/
+/* change the style when the screen is greater than 1250px */
 @media (min-width:1250px){
    #nav.nav .nav-link{
       font-size: 5rem;
@@ -196,9 +225,11 @@ footer{
    #main.main{
       width:100vw;
     }
-    #home.home{
+    /* set home page height */
+   #home.home{
       height:77rem;
    }
+   /* change font-size, let the h1 become bigger */
    h1.page-title{
       font-size: 5rem;
       padding-top:10rem;
@@ -215,6 +246,7 @@ footer{
       font-size:3.5rem;
       height:92rem;
    }
+   /* change font-size, let the title become bigger */
    .about>.section-title{
       font-size:5rem;
    }
@@ -226,6 +258,7 @@ footer{
       font-size:3.5rem;
       height:92rem;
    }
+   /* change font-size, let the title become bigger */
    #contact>.section-title{
       font-size:5rem;
    }
@@ -244,6 +277,7 @@ footer{
    }
    
 }
+/* change the style when the screen width is between 760px and 1250px */
 @media (min-width:760px) and (max-width:1250px){
    #nav.nav .nav-link{
       font-size: 4rem;

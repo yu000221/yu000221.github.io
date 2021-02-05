@@ -122,19 +122,21 @@ h2{
 section{
     line-height:5rem;
     background-color: white;
-    padding:5rem;
+    padding:4rem;
     border:1px solid white;
     box-shadow: 0.8rem 0.4rem 0.5rem #333131;
     border-radius: 2rem;
-    width:650px;
+    width:80%;
+    margin:0 auto;
 }
 input[type="text"]{
-    width:600px;
+    width:100%;
     height:3rem;
     border:0px;
     border-radius: 10px;
     font-size:1.4rem;
     background-color:rgb(235, 235, 235);
+    margin:0 auto;
 }
 .agree{
     font-size: 1.8rem;
@@ -147,8 +149,8 @@ input[type="checkbox"]{
 .drive{
     background-color: #57eeab;
     text-align: center;
-    font-size:3rem;
-    width:600px;
+    font-size:2rem;
+    width:100%;
     border:none;
     height:3.6rem;
     border-radius: 10px;
@@ -159,4 +161,45 @@ input[type="checkbox"]{
 }
 a{
     color: #ff8480;
+}
+footer{
+    background-color: #fffd8c;
+    padding:5rem;
+    width:760px;
+}
+h3{
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+    padding-top:5rem;
+}
+#how{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-bottom: 1.5rem;
+}
+.hours-city{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 5rem;
+}
+#hours{
+    width:200px;
+}
+#city{
+    width:535px;
+}
+#calculate{
+   width:740px;
+   font-size:2.4rem;
+   color:#f7f7ff;
+   background-color: #ff8480;
+   border:none;
+   border-radius: 10px;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0 2rem;
 }

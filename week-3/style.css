@@ -1,0 +1,289 @@
+/* -------------------------------------
+            Mobile phone style
+---------------------------------------- */
+
+/* Style font of titles and paragraphs */
+h1,
+h2,
+h3 {
+    font-family: Cooper, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Maiandra GD, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* ----------------Style the nav bar--------------- */
+
+/* Set the maximum width of the page and center the content */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+/* Set the nav bar's display pattern and background color */
+body #nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background-color: rgba(79, 120, 224, 0.8);
+
+    /* Fix the nav bar at the top of the page */
+    position: fixed;
+    /* Ensure the nav bar is at the top layer */
+    z-index: 1;
+
+}
+
+/* Adjust the space between each line in the nav bar */
+body .nav .nav-link {
+    margin: 0;
+    padding: 8px;
+    
+    /* Add dividing lines */
+    border-bottom: 0.2em solid rgb(48, 55, 120);
+  
+    
+    /* Set the font type and color of the nav bar */
+    font-family: Cooper, Helvetica, sans-serif;
+    color: rgb(48, 55, 120);
+}
+
+/* Remove the dividing line of the last element in the nav bar */
+body .nav .nav-link:last-child {
+    border: 0;
+}
+
+/* Set the color of the nav when the mouse hovers over it*/
+#nav a:hover,
+#nav a:focus,
+#nav a.current {
+    background-color: rgb(255, 225, 236);
+}
+
+/* -------------------Style the home page------------------- */
+
+/* Set the background color and padding of the home page */
+main #home {
+    background-color: rgb(48, 55, 120);
+    color: rgb(255, 225, 236);
+    
+
+    padding: 5em 2em;
+}
+
+/* Set the padding of home page title */
+main .page-title {
+    padding: 2em 1em 1em;
+}
+
+/* -------------------Style the about page------------------- */
+
+/* Set the background color, text alignment and padding of the about page */
+main #about {
+    background-color: rgb(255, 225, 236);
+    color: rgb(48, 55, 120);
+    text-align: center;
+
+    padding: 5em 2em;
+
+    /* Set the position of the container, to make the about-image at the left bottom corner */
+    position: relative;
+}
+
+
+/* Place the image at the left bottom corner of about page */
+main .about-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+}
+
+/* -------------------Style the contact page------------------- */
+
+/* Set the background color, text alignment and padding of contact page */
+main #contact {
+    background-color: rgb(48, 55, 120);
+    color: rgb(255, 225, 236);
+    text-align: center;
+
+    padding: 5em 2em 2em;
+}
+
+/* Set the background color and size of the form */
+section .contact-form {
+    background-color: rgb(255, 225, 236);
+    width: 80%;
+    padding: 1em 2em;
+    margin: 3em auto;
+
+    /* Add rounded corners to the form */
+    border-radius: 25px;
+
+}
+
+/* Set the space between each section */
+.contact-form-section {
+    margin: 1em;
+}
+
+/* Set label properties */
+.contact-form-label {
+    color: rgb(48, 55, 120);
+    font: 1rem Maiandra GD;
+    display: block;
+    float: left;
+
+    padding: 0.2em 0.5em;
+}
+
+/* Set the height of the text area */
+textarea {
+    height: 100px;
+}
+
+/* Set properties of input area*/
+section .contact-form-input {
+    width: 95%;
+    font: 1rem Maiandra GD;
+}
+
+/* Style the submit button */
+button {
+    font: 1.3rem Maiandra GD;
+    color: rgb(48, 55, 120);
+    margin: 0.5em auto;
+    padding: 0.5em;
+    border-radius: 10px;
+
+}
+
+/* -------------Style the footer------------- */
+
+/* Style the background and font color of the footer */
+footer {
+    background-color: rgb(255, 225, 236);
+    color: rgb(48, 55, 120);
+}
+
+/* Style the display format and font of the footer */
+footer p {
+    margin: 0;
+    padding: 0.5em;
+
+    font: 1rem Maiandra GD, Helvetica, sans-serif;
+}
+
+/* -------------------------------------
+            Desktop style
+---------------------------------------- */
+
+/*  For screen width larger than 768px  */
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 1.5rem;
+    }
+
+    /* Stretch the background color to cover the screen */
+    body #main {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    /* Rearrange the nav bar */
+    body #nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        padding: 1em;
+    }
+
+    /* Add dotted bottom borders to each tag of the nav bar */
+    body #nav .nav-link {
+        font-size: 2rem;
+        border-bottom: 0.4em dotted rgb(48, 55, 120);
+    }
+
+    /* -------------------Style the home page------------------- */
+
+    /* Adjust the background size to fit the whole screen */
+    main #home {
+        height: 770px;
+
+    }
+
+    /* Adjust font size of each paragraph */
+    main p {
+        padding: 2em 5em 0.5em;
+    }
+
+    /* Resize the home page title to make it look better on the page */
+    main .page-title {
+        font-size: 3rem;
+
+        padding: 2em 1em 1em;
+    }
+
+    /* -------------------Style the about page------------------- */
+
+    /* Adjust the background size to fit the whole screen */
+    main #about {
+        height: 770px;
+    }
+
+    /* Resize the about page title to make it look better on the page */
+    main .section-title {
+        font-size: 3rem;
+
+        padding: 1em;
+        margin: 0;
+    }
+
+    /* Enlage the image to fit the screen */
+    main .about-image {
+        width: 250px;
+    }
+
+    /* -------------------Style the contact page------------------- */
+    /* Adjust the background size to fit the whole screen */
+    main #contact {
+        height: 880px;
+
+    }
+
+    /* Adjust the form size to fit the screen */
+    section .contact-form {
+        width: 50%;
+        margin: 1em auto;
+    }
+
+    /* Adjust the height of the text area to fit the screen properly*/
+    textarea {
+    height: 50px;
+    }
+
+}
+
+/* For screen width larger than 1200px */
+@media screen and (min-width: 1200px) {
+    /* Enlage the font size of the content */
+    p {
+        font-size: 2rem
+    }
+
+    /* Enlarge the font size of the nav bar */
+    body #nav .nav-link {
+        font-size: 3rem;
+    }
+}
+

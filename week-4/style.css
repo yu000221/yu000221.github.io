@@ -82,27 +82,31 @@ body {
     margin: 0 auto;
 }
 /**************  Mobile Style **************/
-/********** set logo image style **********/
+/* set body max-width value */
 body{
     max-width:760px;
 }
-img{
+/* set logo image style */
+.logo{
     width:10rem;
     height:auto;
     padding-left: 5rem;
 }
+/* set h1 font-size, line-height, width value and margin value */
 h1{
     font-size:5rem;
     width:70%;
     line-height: 6rem;
-    margin:0 auto;
+    padding-left:5rem;
 }
+/* set .start style */
 .start{
     font-size:2rem;
     line-height: 3.3rem;
     padding-left:5rem;
     padding-top:1.5rem;
 }
+/* set scooter image style, let it is in the center */
 .big-image{
     width:100%;
     height:auto;
@@ -111,7 +115,9 @@ h1{
     padding-top:1.5rem;
     padding-bottom: 5rem;
     margin:0 auto;
+    display:block;
 }
+/* set h2 style */
 h2{
     font-size:4rem;
     padding-bottom: 2rem;
@@ -119,16 +125,19 @@ h2{
 .enter{
     font-size:1.8rem;
 }
-section{
-    line-height:5rem;
-    background-color: white;
-    padding:4rem;
-    border:1px solid white;
-    box-shadow: 0.8rem 0.4rem 0.5rem #333131;
-    border-radius: 2rem;
-    width:80%;
-    margin:0 auto;
+/* set form style, add box-shadow, change background color and add border-radius */
+.form{
+    line-height: 5rem;
+    padding:2rem;
+	width:80%;
+	height:auto;
+	margin-left: 5rem;
+	background:white;
+    box-shadow:0.5rem 1rem 1.5rem #333131;
+	opacity:1;
+	border-radius:2rem;
 }
+/* set input text style, add border-radius, change background color */
 input[type="text"]{
     width:100%;
     height:3rem;
@@ -140,12 +149,13 @@ input[type="text"]{
 }
 .agree{
     font-size: 1.8rem;
-    vertical-align: middle;
  }
+ /* set checkbox width and height value */
 input[type="checkbox"]{
     width:2.2rem;
     height:2.2rem;
 }
+/* set drive button style, change background color and font size */
 .drive{
     background-color: #57eeab;
     text-align: center;
@@ -157,17 +167,24 @@ input[type="checkbox"]{
 }
 .apply{
     font-size:1.8rem;
-    line-height: 2.4rem;;
+    line-height: 2.4rem;
 }
+/* change link color to #ff8480 */
 a{
     color: #ff8480;
 }
+/* set footer style, change background color */
 footer{
     background-color: #fffd8c;
-    padding:5rem;
-    width:760px;
+    padding-left:5rem;
+    padding-bottom: 3rem;
+    padding-right:5rem;
+    margin: 5em 0 0;
+    position: relative;
+    width:100%;
 }
-h3{
+/* set h3 style */
+ h3{
     font-size: 1.8rem;
     padding-bottom: 2rem;
     padding-top:5rem;
@@ -178,28 +195,222 @@ h3{
     padding-bottom: 1.5rem;
 }
 .hours-city{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     line-height: 5rem;
 }
+/* using flex to change the layout of the form */
+.input{
+    display: flex;
+    flex-wrap: wrap;
+}
 #hours{
-    width:200px;
+    flex-basis: 50px;
+    flex: 1;
+    margin-right: 0.5em;
 }
 #city{
-    width:535px;
+    flex-basis: 50px;
+    flex: 3; 
 }
+/* set calculate button style */
 #calculate{
-   width:740px;
+   width:100%;
    font-size:2.4rem;
    color:#f7f7ff;
    background-color: #ff8480;
    border:none;
    border-radius: 10px;
+   margin-top:1rem;
 }
+/* using flex to change the layout of these 4 icons */
 .social-media{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding:0 2rem;
+}
+/* change icons' size */
+.facebook,
+.instagram,
+.twitter,
+.linkedin{
+    width:3rem;
+    height:auto;
+}
+/********************* Tablet Style ********************/
+@media screen and (min-width: 980px){
+    /* set body max-width and min-width value */
+    body{
+        max-width:1200px;
+        min-width:760px;
+    }
+    /* set scooter image style, let it is in the center */
+    .big-image{
+        width:50%;
+    }
+     /* using flex to change the layout of the footer */
+    .footer-form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input{
+        flex-basis:60%;
+        flex:1;
+        padding-top:1rem;
+
+    }
+    /* change the position of the calculate button */
+    #calculate{
+        flex-basis:40%;
+        margin-left:0.5em;
+        flex:1;
+    }
+    /* change the positions of the social media icons */
+    .social-media{
+        padding-left: 17rem;
+        padding-right:17rem;
+    }
+    footer{
+        width:100%;
+        margin-left:-6rem;
+        padding-left:10rem;
+        padding-right:10rem;
+        margin-right:6rem;
+    }
+}
+/********************* Desktop Style ********************/
+@media screen and (min-width: 1200px){
+    /* set body min-width value */
+    body{
+        min-width:1200px;
+        width:100%;
+    }
+    .logo{
+        margin-left:-15rem;
+        width:6rem;
+        height:auto;
+    }
+    /* using grid to change the main layout */
+    #main{
+        display:grid;
+        height:33rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #h1-start{
+        height:33rem;
+        grid-column: 1 / 2;
+    }
+    #big-image{
+        height:33rem;
+        grid-column: 2 / 3;
+    }
+    #form{
+        height:30rem;
+        grid-column: 3 / 4;
+        width:30rem;
+        z-index: 2;
+        margin-left: -10rem;
+        line-height: 3rem;
+    }
+    /* change h1 font-size and position */
+    h1{
+        font-size:3rem;
+        line-height: 4.5rem;
+        margin-left:-15rem;
+        margin-top:5rem;
+        z-index: 2;
+        width:40rem;
+    }
+    /* change .start font-size and position */
+    .start{
+        font-size:1.5rem;
+        line-height: 2.2rem;;
+        margin-left:-15rem;
+        margin-top:3.5rem;
+        z-index: 2;
+        width:40rem;
+    }
+    /* set big-image width value and position */
+    .big-image{
+        width:40rem;
+        z-index: 1;
+        margin-left:-18rem;
+    }
+    /* change font-size */
+    h2{
+        font-size:2rem;
+    }
+    .enter{
+        font-size: 1rem;;
+    }
+    .agree{
+        font-size: 1rem;
+     }
+     /* change checkbox width and height value */
+    input[type="checkbox"]{
+        width:1.2rem;
+        height:1.2rem;
+    }
+    /* change drive button font size and height value */
+    .drive{
+        font-size:1.6rem;
+        height:2.6rem;
+    }
+    /* change font-size */
+    .apply{
+        font-size:1rem;
+    }
+    #footer{
+        display:flex;
+        flex-wrap: none;
+        flex-direction: row;
+        width:100%;
+        margin-left:-20rem;
+        padding-right:40rem;
+        height:10rem;
+    }
+    .footer{
+        justify-items: flex-start;
+    }
+    /* set h3 font-size */
+    h3{
+        font-size: 1.4rem;
+        margin-top:-3rem;
+    }
+    /* chagne font-size and line-height */
+    #how{
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+    .hours-city{
+        line-height: 1.5rem;
+        margin-top:-1rem;
+    }
+    input[type="text"]{
+        height:2rem;
+        font-size:1rem;
+    }
+    /* change button font-size */
+    #calculate{
+       font-size:1.4rem;
+    }
+    /* using flex to change social media icons position */
+    .social-media{
+        justify-items: flex-end;
+        margin-top:5rem;
+        width:20rem;
+        display:flex;
+        justify-content: space-between;
+        margin-right:-40rem;
+        margin-left:30rem;
+    }
+    /* change icons' size */
+    .facebook,
+    .instagram,
+    .twitter,
+    .linkedin{
+        width:2rem;
+        height:auto;
+    }
+
+    
 }

@@ -84,7 +84,7 @@ body {
 /**************  Mobile Style **************/
 /* set body max-width value */
 body{
-    max-width:760px;
+    min-width:760px;
 }
 /* set logo image style */
 .logo{

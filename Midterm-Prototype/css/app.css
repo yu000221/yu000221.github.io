@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/********************************************************************************************/
+/* This is where you write your custom syle rules.These style rules affect all deviece types*/
+.racialsection{
+	background:#7CD839;
+}
+.watchsection{
+	background:#FBB026;
+}
+body
+{
+	background:#c69c6c;
+	font-weight: normal;
+	font-size:100%;
+}
+ul,li{ list-style:none;}
+h1{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	font-size:7em;
+}
+.clr{ clear:both;}
+img{ display:block;}
+header { background:#8c623a; padding:20px 0px; }
+header .logo{ float:left;}
+header .logo img{ width:120px; float:left; animation:myfirst 2s infinite ; border-radius:50%;}
+header .logo a{ display:block; overflow:hidden;}
+header .logo p{ float:left; line-height:120px; float:left; margin-left:10px; font-size:50px; color:#fff; }
+header nav{ float:right;}
+header nav ul{ overflow:hidden; margin-top:30px; }
+header nav ul li{ float:left; }
+header nav ul li a{ display:block; padding:10px 20px;  color:#c69c6c; font-size:26px;}
+header nav ul li:hover a,header nav ul li.act a{ background:#fff; color:#c69c6c;animation-name: mysecond;
+  animation-duration: 4s; }
+main{ padding:40px 0px;}
+main .left{ padding:40px 0px;}
+main .right .border{ border:10px solid #fff; width:690px; position:relative; margin-left:-80px; }
+main .right .border h1{ font-size:60px; color:#fff; text-align:center; line-height:432px;  }
+footer { background:#8c623a; padding:10px 0px;}
+footer ul li{ margin:5px 0px;}
+footer li a{ color:#fff;}
+footer li .social{ color:#fff;}
+footer li i{ color:#fff; width:30px; height:30px; text-align:center; line-height:30px; border:1px solid #fff; border-radius:50%; display:inline-block;}
+footer ul.last li{ margin:5px 0px;}
+.zuixiamian i{ margin-right:30px;}
+.about { text-align:center;}
+.about h2{ color:#fff; font-size:20px;}
+.about p{ color:#fff; font-size:12px; line-height:1.5; margin-bottom: 0px;}
+.map{ border-top:5px solid #ebd6b9; padding:30px;  margin-top: 30px;}
+.map .left{ float:right; width:50%;padding: 0px;}
+.map .left .ditu{ width:100%; height:150px; }
+.map .right{ float:left; width:50%; text-align:center;}
+.map .right p{ font-size:14px; color:#fff;}
+.title{ text-align:center; font-size:50px; color:#fff; line-height:2;}
+
+.contact h2{ color:#fff; font-size:20px; text-align:center;}
+.form{ width:80%; margin:0 auto; border:2px solid #fff; padding:10px 30px; background:#89633c;}
+.btn{ text-align:right; margin-top:20px; margin-bottom:20px;}
+.btn input{ border:0; background:#c69c6c; color:#fff; padding:5px 10px !important; border-radius:10px; height:30px !important;}
+.form label{ color:#fff; font-size:20px;}
+.form input{ border-radius:20px; font-size:16px; padding: 0px; height:40px; margin: 0 0 0;}
+.search{ float:right; color:#fff;}
+.search i{ font-size:24px; margin:0px 10px;}
+.menup {
+    padding: 20px 0px;
+}
+.search input{ border-radius:10px; border:none; width:250px; height:30px;}
+
+.menup h2 {
+    color: #fff;
+    font-size: 20px;
+    text-align:center;
+}
+
+    .mbshow { display:none;} 
+.menup li{ padding:10px 0px; margin-bottom:20px;}
+.menup li .columns{ text-align:center;}
+.menup li .columns img{ width:50%; margin:0 auto;}
+.menup li .columns p{ font-size:12px; min-height:50px; width:50%; margin:0 auto; color:#fff; margin-top:20px; word-break:break-all;  text-overflow:ellipsis; overflow:hidden; }
+@keyframes myfirst
+{
+    100%{ transform: rotate(360deg);}
+}
+
+@keyframes mysecond {
+  from {background-color: #8c623a;}
+  to {background-color: #fff;}
+}
+
+
+
+/************************************end default style rules**********/
+
+
+/* Small only - Range is from 0px to 767px: Up to a vertical tablet */
+@media screen and (max-width: 47.938em) 
+{
+	
+	
+}
+
+/* Medium and up - Minimum width is 768 pixel: Vertical Tablet */
+@media screen and (min-width: 48em) 
+{ 
+
+h1{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: left;
+	font-size:3em;
+}
+
+	
+}
+
+/* Medium only - Minimum width is 768 px and maximum width to be 1399px - Tablet to up to laptop/desktop being 1400 pixels*/
+@media screen and (min-width: 48em) and (max-width: 87.438em) 
+{
+	
+}
+
+/* Large and up - Minimum width of 1400px */
+@media screen and (min-width: 87.500em) 
+{
+	
+
+}
+
+/* Large only - Minimum width of 1400 px to maximum width of 1900px */
+@media screen and (min-width: 87.500em) and (max-width: 118.750em) 
+{
+	
+}
+
+
+
+
+@media print, screen and (max-width: 64em) 
+{
+    
+    .pbshow { display:none;} 
+    .mbshow { display:block;} 
+    main {
+    padding: 0px;
+}
+    main.index .left {
+    padding: 20px 0px;
+    text-align:center;
+    }
+    main.index .left img 
+    {
+        margin:0 auto;
+    }
+    main .right .border {
+    border: 28px solid #3179e7;
+    width: 690px;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:-180px;
+    margin-bottom:30px;
+}
+main .right .border h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 432px;
+    margin-bottom:0px;
+    border: 2px solid #fff;
+}
+
+ main.about .left {
+    padding: 20px 0px;
+    text-align:center;
+    }
+    main.about .left img 
+    {
+        margin:0 auto;
+    }
+    main.about .right{ width:80%; margin:0 auto;}
+    
+    .map .left {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+
+.map .right {
+    float: right;
+    width: 50% !important;
+    text-align: center;
+}
+.map .left .ditu {
+    width: 80%;
+    height: 150px; 
+}
+.form 
+{
+    margin-bottom:50px;
+    width:60%;
+}
+}
+
+/* Small only - Range is from 0px to 767px: Up to a vertical tablet */
+@media screen and (max-width: 47.938em) 
+{
+    
+    main .right .border {
+    border: 10px solid #fff;
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -80px;
+    margin-bottom: 30px;
+}main .right .border h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 0px;
+    border: 2px solid #fff;
+}
+header .logo img {
+    width: 40px;
+    float: left;
+}header .logo p 
+{
+    display:none;
+}
+    header nav ul li a {
+    display: block;
+    padding: 6px 9px;
+    color: #c69c6c;
+    font-size: 14px;
+}
+header nav ul {
+    overflow: hidden;
+    margin-top: 2px;
+}
+footer li a {
+    color: #fff;
+    font-size:12px;
+}footer li .social {
+    color: #fff;
+    font-size:12px;
+}.zuixiamian i {
+    margin-right: 5px;
+}
+.map .left {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}.map .right {
+    float: right;
+    width: 100% !important;
+    text-align: center;
+}.map .left .ditu {
+    width: 90%;
+    height: 150px; 
+    margin:0 auto;
+}.map {
+    border-top: 5px solid #ebd6b9;
+    padding: 10px;
+    margin-top: 30px;
+}
+.menup li .columns img {
+    width: 90%;
+    margin: 0 auto;
+}
+.menup li .columns p {
+    font-size: 12px;
+    min-height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 20px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.form {
+    margin-bottom: 50px;
+    width: 90%;
+}
+}
+ 

@@ -75,11 +75,11 @@ body {
 }
 @font-face {
    font-family: "ChelaOne";
-   src: url(fonts/ChelaOne-Regular.ttf);
+   src: url(ChelaOne-Regular.ttf);
 }
 @font-face {
    font-family: "PatrickHand";
-   src: url(fonts/PatrickHand-Regular.ttf);
+   src: url(PatrickHand-Regular.ttf);
 }
 /* set nav style, let nav bar on the top center in this page */
 #nav.nav{

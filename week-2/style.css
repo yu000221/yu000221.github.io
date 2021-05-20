@@ -53,7 +53,7 @@
  *******************************************/
 
  /*************** Mobile Style *************/
-
+ @import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Patrick+Hand&display=swap');
 /* set html style */
 html{
    /* set html font size */
@@ -73,14 +73,6 @@ body {
   box-sizing: inherit;
   line-height: inherit;
 }
-@font-face {
-   font-family: "ChelaOne";
-   src: url(ChelaOne-Regular.ttf);
-}
-@font-face {
-   font-family: "PatrickHand";
-   src: url(PatrickHand-Regular.ttf);
-}
 /* set nav style, let nav bar on the top center in this page */
 #nav.nav{
    display:inline-block;
@@ -97,7 +89,7 @@ body {
 	color: #f9f7e8;
 	font-size: 3rem;
    text-decoration: none;
-   font-family: ChelaOne;
+   font-family: 'Chela One', cursive;
 }
 /* change nav text position */
 #nav.nav :nth-child(1){
@@ -130,7 +122,7 @@ h1.page-title{
    /* change font-size, font-family, color and padding */
    font-size: 3rem;
    /* using the same font-family with nav */
-   font-family:ChelaOne;
+   font-family: 'Chela One', cursive;
    color:#f9f7e8;
    padding:2rem;
 }
@@ -138,7 +130,7 @@ h1.page-title{
 #home>p{
    /* change font-family, color and font-size */
    /* using another font-family */
-   font-family:PatrickHand;
+   font-family:'Patrick Hand', cursive;
    color:#f9f7e8;
    font-size:1.5rem;
 }
@@ -152,13 +144,13 @@ h1.page-title{
    font-size:1.5rem;
    padding:1rem 2rem;
    color:#61bfad;
-   font-family: PatrickHand;
+   font-family: 'Patrick Hand', cursive;
 }
 /* set about page title style */
 /* let it is same with h1 */
 .about>.section-title{
    font-size:3rem;
-   font-family:ChelaOne;
+   font-family: 'Chela One', cursive;
    color:#f9f7e8;
    padding:2rem;
    background-color: #61bfad;
@@ -177,13 +169,13 @@ img.about-image{
    font-size:1.5rem;
    padding:1rem 6rem;
    color:#f9f7e8;
-   font-family: PatrickHand;
+   font-family: 'Patrick Hand', cursive;
 }
 /* set contact page title style */
 /* let it is same with h1 */
 .contact>.section-title{
    font-size:3rem;
-   font-family:ChelaOne;
+   font-family: 'Chela One', cursive;
    color:#f9f7e8;
    padding:2rem;
 }
@@ -203,7 +195,7 @@ form.contact-form{
 label.contact-form-label{
    font-size:1.5rem;
    /* change font-family, let it is same with paragraph font-family */
-   font-family: PatrickHand;
+   font-family: 'Patrick Hand', cursive;
 }
 /* change input and textarea position */
 input.contact-form-input,
@@ -214,7 +206,7 @@ textarea.contact-form-input{
 /* change button font-family and font-size */
 button{
    width:10rem;
-   font-family: PatrickHand;
+   font-family: 'Patrick Hand', cursive;
    font-size:1rem;
 }
 /* set footer style */

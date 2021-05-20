@@ -73,6 +73,14 @@ body {
   box-sizing: inherit;
   line-height: inherit;
 }
+@font-face {
+   font-family: "ChelaOne";
+   src: url(fonts/ChelaOne-Regular.ttf);
+}
+@font-face {
+   font-family: "PatrickHand";
+   src: url(fonts/PatrickHand-Regular.ttf);
+}
 /* set nav style, let nav bar on the top center in this page */
 #nav.nav{
    display:inline-block;
@@ -81,15 +89,15 @@ body {
    margin: 0 auto;
    text-align: center;
    /* set nav background color */
-	background-color: orange;
-   border:0.1rem solid orange;
+	background-color:#ff8b8b;
+   border:0.1rem solid #ff8b8b;
 }
 #nav.nav .nav-link{
    /* set font color, size, font-family */
-	color: white;
+	color: #f9f7e8;
 	font-size: 3rem;
    text-decoration: none;
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: ChelaOne;
 }
 /* change nav text position */
 #nav.nav :nth-child(1){
@@ -97,7 +105,7 @@ body {
 }
 /* change a:hover color */
 #nav.nav .nav-link:hover{
-   color:olive;
+   color:#61bfad;
    animation-name: nav-link-hover;
 	animation-duration: 300ms;
 	animation-fill-mode: forwards;
@@ -108,12 +116,12 @@ body {
   /* use margin to let main page is in the center */
   margin: 0px auto;
   /* change main page background color */
-  background-color: olive;
+  background-color: #61bfad;
 }
 /* set Home page style */
 #home.home{
    /* change home page background color */
-   background-color:olive;
+   background-color:#61bfad;
    /* let home page text is in the center */
    text-align: center;
 }
@@ -122,39 +130,40 @@ h1.page-title{
    /* change font-size, font-family, color and padding */
    font-size: 3rem;
    /* using the same font-family with nav */
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color:white;
+   font-family:ChelaOne;
+   color:#f9f7e8;
    padding:2rem;
 }
 /* set paragraph of home page's style */
 #home>p{
    /* change font-family, color and font-size */
    /* using another font-family */
-   font-family:Arial, Helvetica, sans-serif;
-   color:orange;
+   font-family:PatrickHand;
+   color:#f9f7e8;
    font-size:1.5rem;
 }
 /* set about page style */
 #about.about{
-   background-color:white;
+   background-color:#f9f7e8;
    /* add border, let the layout more hierarchical sense */
-   border:6rem solid orange;
+   border:6rem solid #ff8b8b;
    text-align:center;
    margin:0 auto;
    font-size:1.5rem;
    padding:1rem 2rem;
-   color:olive;
+   color:#61bfad;
+   font-family: PatrickHand;
 }
 /* set about page title style */
 /* let it is same with h1 */
 .about>.section-title{
    font-size:3rem;
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color:white;
+   font-family:ChelaOne;
+   color:#f9f7e8;
    padding:2rem;
-   background-color: olive;
+   background-color: #61bfad;
    /* add border, let title background color become smaller */
-   border:2rem solid white;
+   border:2rem solid #f9f7e8;
 }
 /* set image size, let the image change size according to the size of the screen */
 img.about-image{
@@ -162,19 +171,20 @@ img.about-image{
 }
 /* set contact page style */
 #contact.contact{
-   background-color:olive;
+   background-color:#61bfad;
    text-align:center;
    margin:0 auto;
    font-size:1.5rem;
    padding:1rem 6rem;
-   color:orange;
+   color:#f9f7e8;
+   font-family: PatrickHand;
 }
 /* set contact page title style */
 /* let it is same with h1 */
 .contact>.section-title{
    font-size:3rem;
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color:white;
+   font-family:ChelaOne;
+   color:#f9f7e8;
    padding:2rem;
 }
 form.contact-form{
@@ -184,16 +194,16 @@ form.contact-form{
    padding-bottom: 3rem;
    /* change form text position */
    text-align: left;
-   color:white;
+   color:#f9f7e8;
    /* add border, highlight the form */
-   border:0.5rem solid white;
-   background-color: orange;
+   border:0.5rem solid #f9f7e8;
+   background-color: #ff8b8b;
 }
 /* set label style */
 label.contact-form-label{
    font-size:1.5rem;
    /* change font-family, let it is same with paragraph font-family */
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: PatrickHand;
 }
 /* change input and textarea position */
 input.contact-form-input,
@@ -204,13 +214,13 @@ textarea.contact-form-input{
 /* change button font-family and font-size */
 button{
    width:10rem;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: PatrickHand;
    font-size:1rem;
 }
 /* set footer style */
 footer{
-   background-color:orange;
-   color:white;
+   background-color:#ff8b8b;
+   color:#f9f7e8;
    text-align:center;
    padding:2rem;
 }
@@ -242,7 +252,7 @@ footer{
       padding-top:3rem;
    }
    #about.about{
-      border:10rem solid orange;
+      border:10rem solid #ff8b8b;
       font-size:3.5rem;
       height:92rem;
    }
@@ -298,7 +308,7 @@ footer{
       padding-top:2rem;
    }
    #about.about{
-      border:8rem solid orange;
+      border:8rem solid #ff8b8b;
       font-size:2.5rem;
       height:80rem;
    }

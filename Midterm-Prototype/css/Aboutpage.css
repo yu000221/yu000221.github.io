@@ -1,1 +1,345 @@
+/***********************************
+            RESET CSS
+***********************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***********************************
+            CUSTOM CSS
+***********************************/
+
+body{
+    width:100%;
+    margin:0 auto;
+}
+
+/***********************************
+           Mobile style
+***********************************/
+
+/* set header background-color */
+header{
+    background-color:#4c4b4a;
+    width:100%;
+    height:8rem;
+}
+/* set nav style */
+.list li{
+    text-align:center;
+    float: left;
+    width:20%;
+}
+.list a,
+.list a:link,
+.list a:visited{
+    display: block;
+    padding:1rem 0.5rem;
+    color:white;
+    text-decoration: none;
+    margin:2rem 0.5rem;
+    font-family: 'Staatliches', cursive;
+}
+.list a:hover{
+    color:aquamarine;
+    font-weight: bold;
+}
+/* set logo style */
+.logo-image img{
+    width:5rem;
+    height:5rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+    padding:1rem;
+}
+/* set h1 style */
+h1{
+    font-size:2rem;
+    font-family: 'Staatliches', cursive;
+    color:#4c4b4a;
+    text-align: center;
+    margin:2rem auto;
+}
+.top1 p{
+    font-size:1.2rem;
+    color:#4c4b4a;
+    font-family:'Indie Flower', cursive ;
+    text-align: center;
+    width:90%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+}
+/* set top-image size */
+.top-image img{
+    width:100%;
+    height:auto;
+    margin:2rem 0;
+}
+/* set h2 style */
+h2{
+    font-size:1.9rem;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    margin:2rem auto;
+    color:#4c4b4a;
+}
+/* set .middle background-color */
+.middle{
+    background-color: antiquewhite;
+}
+/* set middle-list style */
+.middle-list ul li{
+    list-style-type: circle;
+    line-height: 1.3rem;
+    font-family: 'Staatliches', cursive;
+    margin:1.5rem 3rem;
+    color:#4c4b4a;
+    padding-bottom: 2rem;
+}
+/* set bottom image size */
+.bottom img{
+    width:100%;
+    height:auto;
+}
+/* set footer style */
+.footer{
+    width:100%;
+    height:15rem;
+    margin-top:10rem;
+    background-color: #4c4b4a;
+}
+h2{
+    font-size:1.5rem;
+    color:white;
+    text-align: center;
+    margin:0 auto;
+    padding-top:2rem;
+    width:50%;
+    font-family: 'Staatliches', cursive;
+}
+.social-media{
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding:1rem;
+}
+.facebook,
+.instagram,
+.twitter{
+    margin:0 2rem;
+    width:10%;
+}
+.back-to-top{
+    width:15%;
+	font-size: 0.6rem;
+    color:aquamarine;
+    right: 1rem;
+    position: absolute;
+    text-align: center;
+}
+.back-to-top a:hover{
+    font-weight: bold;
+}
+.back-to-top a:link,
+.back-to-top a:visited{
+    color:aquamarine;
+}
+.back-to-top img{
+    width:60%;
+    height:60%;
+}
+/***********************************
+           Tablet style
+***********************************/
+@media screen and (min-width: 768px){
+    /* reset nav font-size */
+    .list a,
+    .list a:link,
+    .list a:visited{
+        font-size:1.3rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }  
+    .top1 p{
+        font-size:1.4rem;
+        width:70%;
+        line-height: 1.6rem;
+    }
+    h2{
+        font-size:2.4rem;
+    }
+    .middle-list ul li{
+        line-height: 1.5rem;
+        margin:1.8rem 8rem;
+        font-size:1.4rem;
+    }
+    /* reset footer style */
+    footer{
+        padding-top:8rem;
+    }
+    h2{
+        font-size:1.9rem;
+    }
+    /* set back-to-top image max-width value */
+    .back-to-top img{
+       max-width: 70px;
+    }
+    }
+    /***********************************
+               Desktop style
+    ***********************************/
+    @media screen and (min-width: 1200px){
+        /* reset nav font-size */
+    .list a,
+    .list a:link,
+    .list a:visited{
+        font-size:1.6rem;
+    }
+    h1{
+        font-size: 2.8rem;
+    }  
+    .top1 p{
+        font-size:1.6rem;
+        width:50%;
+        line-height: 2rem;
+    }
+    h2{
+        font-size:2.7rem;
+    }
+    .middle-list ul li{
+        margin:1.8rem 12rem;
+        font-size: 1.6rem;
+    }
+    /* set back-to-top image max-width value */
+    .back-to-top img{
+       max-width: 75px;
+    }
+    }
+    

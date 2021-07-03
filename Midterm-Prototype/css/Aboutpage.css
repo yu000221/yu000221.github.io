@@ -171,12 +171,24 @@ header{
     font-weight: bold;
 }
 /* set logo style */
+@Keyframes donut-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+ 
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+ 
 .logo-image img{
     width:5rem;
     height:5rem;
     margin: 0.5rem;
     border-radius: 100%;
     padding:1rem;
+    display: inline-block;
+    animation: donut-spin 1.2s linear infinite;
 }
 /* set h1 style */
 h1{

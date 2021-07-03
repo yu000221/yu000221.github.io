@@ -1,1 +1,484 @@
+/***********************************
+            RESET CSS
+***********************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***********************************
+            CUSTOM CSS
+***********************************/
+
+body{
+    width:100%;
+    margin:0 auto;
+}
+
+/***********************************
+           Mobile style
+***********************************/
+
+/* set header background-color */
+header{
+    background-color:#4c4b4a;
+    width:100%;
+    height:8rem;
+}
+/* set nav style */
+.list li{
+    text-align:center;
+    float: left;
+    width:20%;
+}
+.list a,
+.list a:link,
+.list a:visited{
+    display: block;
+    padding:1rem 0.5rem;
+    color:white;
+    text-decoration: none;
+    margin:2rem 0.5rem;
+    font-family: 'Staatliches', cursive;
+}
+.list a:hover{
+    color:aquamarine;
+    font-weight: bold;
+}
+/* set logo style */
+@Keyframes donut-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+ 
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+ 
+.logo-image img{
+    width:5rem;
+    height:5rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+    padding:1rem;
+    display: inline-block;
+    animation: donut-spin 1.2s linear infinite;
+}
+/* set h1 font, size and padding */
+h1{
+    font-size: 2rem;
+    color:aquamarine;
+    margin:2rem auto;
+    text-align: center;
+    width:50%;
+    background-color: #4c4b4a;
+    padding:0.5rem 1.5rem;
+    font-family: 'Staatliches', cursive;
+}
+/* set .introduction paragraph style */
+.paragraph p{
+    font-size: 1rem;
+    color:#4c4b4a;
+    font-family:'Indie Flower', cursive ;
+    text-align: center;
+    width:90%;
+    margin: 0 auto;
+    line-height: 1.3rem;
+}
+/* set .intro-image size */
+.intro-image img{
+    width:100%;
+    height:auto;
+    padding-top:2rem;
+}
+/* using grid to set .product style */
+.image-intro{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width:100%;
+}
+.g1-1{
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+}
+.g1-2{
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+}
+.g2-1{
+    grid-column: 1 / 2;
+    grid-row: 3/4;
+}
+.g2-2{
+    grid-column: 1 / 2;
+    grid-row: 4/5;
+}
+.g3-1{
+    grid-column: 1 / 2;
+    grid-row: 5/6;
+}
+.g3-2{
+    grid-column: 1 / 2;
+    grid-row: 6/7;
+}
+.g4-1{
+    grid-column: 1 / 2;
+    grid-row: 7/8;
+}
+.g4-2{
+    grid-column: 1 / 2;
+    grid-row: 8/9;
+}
+.g1-1 img,
+.g2-1 img,
+.g3-1 img,
+.g4-1 img{
+    width:100%;
+    height: auto;
+}
+.g1-2 p,
+.g2-2 p,
+.g3-2 p,
+.g4-2 p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding:2rem;
+    vertical-align:middle; 
+    margin-top:5rem;
+}
+.g1-2,
+.g2-2,
+.g3-2,
+.g4-2{
+    background-color: #4c4b4a;
+}
+
+/* set footer style */
+.footer{
+    width:100%;
+    height:15rem;
+    margin-top:10rem;
+    background-color: #4c4b4a;
+}
+h2{
+    font-size:1.5rem;
+    color:aquamarine;
+    text-align: center;
+    margin:0 auto;
+    padding-top:2rem;
+    width:50%;
+    font-family: 'Staatliches', cursive;
+}
+.social-media{
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding:1rem;
+}
+.facebook,
+.instagram,
+.twitter{
+    margin:0 2rem;
+    width:10%;
+}
+.back-to-top{
+    width:15%;
+	font-size: 0.6rem;
+    color:aquamarine;
+    right: 1rem;
+    position: absolute;
+    text-align: center;
+}
+.back-to-top a:hover{
+    font-weight: bold;
+}
+.back-to-top a:link,
+.back-to-top a:visited{
+    color:aquamarine;
+}
+.back-to-top img{
+    width:60%;
+    height:60%;
+}
+/***********************************
+           Tablet style
+***********************************/
+@media screen and (min-width: 768px){
+/* reset nav font-size */
+.list a,
+.list a:link,
+.list a:visited{
+    font-size:1.3rem;
+}
+/* reset h1 font size */
+h1{
+    font-size:2.5rem;
+}
+/* set .introduction paragraph style */
+.paragraph p{
+    font-size: 1.3rem;
+    width:70%;
+    line-height: 1.6rem;
+}
+/* using grid to set .product style */
+.image-intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width:100%;
+}
+.g1-1{
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+}
+.g1-2{
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+}
+.g2-1{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.g2-2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.g3-1{
+    grid-column: 1 / 2;
+    grid-row: 3/4;
+}
+.g3-2{
+    grid-column: 2 / 3;
+    grid-row: 3/4;
+}
+.g4-1{
+    grid-column:2 / 3;
+    grid-row: 4/5;
+}
+.g4-2{
+    grid-column: 1 / 2;
+    grid-row: 4/5;
+}
+.g1-2 p,
+.g2-2 p,
+.g3-2 p,
+.g4-2 p{
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+footer{
+    padding-top:8rem;
+}
+h2{
+    font-size:1.9rem;
+}
+/* set back-to-top image max-width value */
+.back-to-top img{
+   max-width: 70px;
+}
+}
+/***********************************
+           Desktop style
+***********************************/
+@media screen and (min-width: 1200px){
+    /* reset nav font-size */
+.list a,
+.list a:link,
+.list a:visited{
+    font-size:1.6rem;
+}
+/* reset h1 font size */
+h1{
+    font-size:2.8rem;
+}
+/* set .introduction paragraph style */
+.paragraph p{
+    font-size: 1.5rem;
+    width:50%;
+    line-height: 2rem;
+}
+/* using grid to set .product style */
+.image-intro{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width:100%;
+}
+.g1-1{
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+}
+.g1-2{
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+}
+.g2-1{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.g2-2{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+.g3-1{
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+}
+.g3-2{
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+}
+.g4-1{
+    grid-column:4 / 5;
+    grid-row: 2/3;
+}
+.g4-2{
+    grid-column: 3 / 4;
+    grid-row: 2/3;
+}
+.g1-2 p,
+.g2-2 p,
+.g3-2 p,
+.g4-2 p{
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-top:1rem;
+}
+
+h2{
+    font-size:2.3rem;
+}
+/* set back-to-top image max-width value */
+.back-to-top img{
+   max-width: 75px;
+}
+}

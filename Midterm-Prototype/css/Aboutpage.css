@@ -194,7 +194,7 @@ header{
 h1{
     font-size:2rem;
     font-family: 'Staatliches', cursive;
-    color:#4c4b4a;
+    color:aquamarine;
     text-align: center;
     margin:2rem auto;
 }
@@ -248,7 +248,7 @@ h2{
 }
 h2{
     font-size:1.5rem;
-    color:white;
+    color:aquamarine;
     text-align: center;
     margin:0 auto;
     padding-top:2rem;

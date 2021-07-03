@@ -1,1 +1,394 @@
+/***********************************
+            RESET CSS
+***********************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***********************************
+            CUSTOM CSS
+***********************************/
+
+body{
+    width:100%;
+    margin:0 auto;
+}
+
+/***********************************
+           Mobile style
+***********************************/
+
+/* set header background-color */
+header{
+    background-color:#4c4b4a;
+    width:100%;
+    height:8rem;
+}
+/* set nav style */
+.list li{
+    text-align:center;
+    float: left;
+    width:20%;
+}
+.list a,
+.list a:link,
+.list a:visited{
+    display: block;
+    padding:1rem 0.5rem;
+    color:white;
+    text-decoration: none;
+    margin:2rem 0.5rem;
+    font-family: 'Staatliches', cursive;
+}
+.list a:hover{
+    color:aquamarine;
+    font-weight: bold;
+}
+/* set logo style */
+@Keyframes donut-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+ 
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+ 
+.logo-image img{
+    width:5rem;
+    height:5rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+    padding:1rem;
+    display: inline-block;
+    animation: donut-spin 1.2s linear infinite;
+}
+/* set h1 font, size and padding */
+h1{
+    font-size: 2rem;
+    color:aquamarine;
+    margin:2rem auto;
+    text-align: center;
+    width:50%;
+    background-color: #4c4b4a;
+    padding:0.5rem 1.5rem;
+    font-family: 'Staatliches', cursive;
+}
+
+/* Style the form */
+form {
+    background-color:antiquewhite;
+    box-shadow: 9px 8px 7px 0px #4c4b4a;
+    padding: 1rem;
+    color: #4c4b4a;
+    width:80%;
+    margin:4rem auto;
+    font-family: 'Staatliches', cursive;
+    height:50rem;
+    
+}
+.form-label {
+    display: block;
+    line-height: 2rem;
+    margin:0.8rem 2rem;
+}
+.form{
+    width: 80%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    margin:0.8rem 2rem;
+}
+.message {
+    font-size: 1rem;
+    width:80%;
+    margin:0.8rem 2rem;
+}
+.text {
+    width: 80%;
+    height: 6rem;
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin:0.8rem 2rem;
+}
+.submit {
+    width: 80%;
+    background-color: #4c4b4a;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.5rem 2rem;
+    margin:0.8rem 2rem;
+    text-align: center;
+}
+/* set paragraph style */
+.information-contact div p{
+    font-size: 1rem;
+    color:#4c4b4a;
+    font-family:'Indie Flower', cursive ;
+    text-align: center;
+    width:90%;
+    margin: 0 auto;
+    line-height: 1.3rem;
+}
+.warning p{
+    font-size: 1rem;
+    color:#4c4b4a;
+    font-family:'Indie Flower', cursive ;
+    text-align: center;
+    width:90%;
+    margin: 0 auto;
+    line-height: 1.3rem;
+}
+
+/* set footer style */
+.footer{
+    width:100%;
+    height:15rem;
+    margin-top:10rem;
+    background-color: #4c4b4a;
+}
+h2{
+    font-size:1.5rem;
+    color:aquamarine;
+    text-align: center;
+    margin:0 auto;
+    padding-top:2rem;
+    width:50%;
+    font-family: 'Staatliches', cursive;
+}
+.social-media{
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding:1rem;
+}
+.facebook,
+.instagram,
+.twitter{
+    margin:0 2rem;
+    width:10%;
+}
+.back-to-top{
+    width:15%;
+	font-size: 0.6rem;
+    color:aquamarine;
+    right: 1rem;
+    position: absolute;
+    text-align: center;
+}
+.back-to-top a:hover{
+    font-weight: bold;
+}
+.back-to-top a:link,
+.back-to-top a:visited{
+    color:aquamarine;
+}
+.back-to-top img{
+    width:60%;
+    height:60%;
+}
+/***********************************
+           Tablet style
+***********************************/
+@media screen and (min-width: 768px){
+/* reset nav font-size */
+.list a,
+.list a:link,
+.list a:visited{
+    font-size:1.3rem;
+}
+/* reset h1 font size */
+h1{
+    font-size:2.5rem;
+}
+.form-label ,
+.form,
+.message ,
+.text ,
+.submit {
+    font-size:1.3rem;
+    margin:0.8rem 4rem;
+}
+/* set paragraph style */
+.information-contact div p,
+.warning p{
+    font-size: 1.3rem;
+    width:70%;
+    line-height: 1.6rem;
+}
+footer{
+    padding-top:8rem;
+}
+h2{
+    font-size:1.9rem;
+}
+/* set back-to-top image max-width value */
+.back-to-top img{
+   max-width: 70px;
+}
+}
+/***********************************
+           Desktop style
+***********************************/
+@media screen and (min-width: 1200px){
+    /* reset nav font-size */
+.list a,
+.list a:link,
+.list a:visited{
+    font-size:1.6rem;
+}
+/* reset h1 font size */
+h1{
+    font-size:2.8rem;
+}
+.form-label ,
+.form,
+.message ,
+.text ,
+.submit {
+    font-size:1.5rem;
+    margin:0.8rem 7rem;
+}
+/* set paragraph style */
+.information-contact div p,
+.warning p{
+    font-size: 1.5rem;
+    width:50%;
+    line-height: 2rem;
+}
+h2{
+    font-size:2.3rem;
+}
+/* set back-to-top image max-width value */
+.back-to-top img{
+   max-width: 75px;
+}
+}

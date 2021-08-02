@@ -1,63 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Page Redesign</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="base.css">
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-  <nav id="nav" class="nav">
-    <a class="nav-link" href="#home">Home</a>
-    <a class="nav-link" href="#about">About</a>
-    <a class="nav-link" href="#contact">Contact</a>
-  </nav>
-  <main id="main" class="main">
-    <section id="home" class="home">
-      <h1 class="page-title">Hello</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perferendis nulla dicta labore ullam debitis,
-        eligendi tempore modi aut, dolore velit rem omnis, placeat reprehenderit accusamus repudiandae dolorem voluptate
-        quaerat.</p>
-    </section>
-    <section id="about" class="about">
-      <h2 class="section-title">About Me</h2>
-      <img class="about-image" src="images/businessman.png" alt="Businessman">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique assumenda excepturi libero!
-        Laudantium velit aspernatur iusto architecto in facere cupiditate perspiciatis. Harum animi beatae amet
-        consequatur quo alias fugit!</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, temporibus eligendi, praesentium hic asperiores
-        dolorum magni veniam et, sequi voluptatibus id officiis explicabo molestias repellendus veritatis ipsa ad eaque
-        atque.</p>
-    </section>
-    <section id="contact" class="contact">
-      <h2 class="section-title">Contact Me</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit veritatis harum maxime nobis ipsa
-        consectetur vero iusto earum facere dolor ad, in illo expedita, ducimus est recusandae rerum consequatur ex!</p>
-      <form class="contact-form">
-        <div class="contact-form-section">
-          <label class="contact-form-label">Name</label>
-          <input class="contact-form-input" type="text">
-        </div>
-        <div class="contact-form-section">
-          <label class="contact-form-label">Email</label>
-          <input class="contact-form-input" type="email">
-        </div>
-        <div class="contact-form-section">
-          <label class="contact-form-label">Message</label>
-          <textarea class="contact-form-input"></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>&copy; 2020</p>
-  </footer>
-</body>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Bootstrap</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#Home">Home</a></li>
+      <li><a href="#Started">Started</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Components<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#Grid">Grid</a></li>
+          <li><a href="#Buttons">Buttons</a></li>
+          <li><a href="#Tables">Tables</a></li>
+          <li><a href="#Images">Images</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br><br><br>
+
+<header class=".bg-dark">
+<div id="Home" class="container center-block">
+    <h1 class="text-primary">Introduce Bootstrap</h1>
+    <p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.
+        Bootstrap is completely free to download and use!</p>
+    <a href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp" class="btn btn-success btn-lg" role="button">Start learning Bootstrap now >></a>
+</div>
+</header>
+<br><br><hr><br>
+
+<main>
+<div id="Started" class="container center-block">
+    <h1 class="text-primary">Get Started</h1>
+    <br>
+    <div>
+    <h2 class="display-2 .text-success">What is Bootstrap?</h2>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Bootstrap is a free front-end framework for faster and easier web development</li>
+        <li class="list-group-item list-group-item-info">Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins</li>
+        <li class="list-group-item list-group-item-warning">Bootstrap also gives you the ability to easily create responsive designs</li>
+    </ul>
+    </div>
+    <div>
+    <h2 class="display-2 mt-2 .text-success">Why Use Bootstrap?</h2>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap</li>
+        <li class="list-group-item list-group-item-info">Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops</li>
+        <li class="list-group-item list-group-item-warning">Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework</li>
+    </ul>
+    </div>
+</div>
+<br><br><hr><br>
+
+<div class="container">
+    <h1 class="text-primary" id="Components">Components<br><small>Examples:</small></h1><br>
+    <div class="row">
+
+        <div class="col-sm-6">
+          <h3 class="text-success" id="Grid">Grid</h3>
+          <p>Bootstrap's grid system allows up to 12 columns across the page.</p>
+          <p>Bootstrap's grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
+          <h4>Example:<br><small class="text-primary">Three Equal Columns:</small></h4>
+          <div class="row border-1 border-secondary">
+                <div class="col-sm-4 bg-success">.col-sm-4</div>
+                <div class="col-sm-4 bg-danger">.col-sm-4</div>
+                <div class="col-sm-4 bg-success">.col-sm-4</div>
+          </div>
+          <p>The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops. On mobile phones or screens that are less than 768px wide, the columns will automatically stack:</p><br>
+          <pre class="bg-light">
+            &lt;div class="row"&gt;
+            &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+            &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+            &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
+          <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp" class="btn btn-success btn-lg" role="button">Learn more >></a>
+        </div>
+
+        <div class="col-sm-6">
+            <h3 class="text-success" id="Buttons">Buttons</h3>
+            <p>Bootstrap provides different styles of buttons:</p>
+            <h4>Example:<br><small class="text-primary">Button styles:</small></h4>
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-link">Link</button>
+            <p>The following example shows the code for the different button styles:</p><br>
+            <pre class="bg-light">
+              &lt;button type="button" class="btn"&gt;Basic&lt;/button&gt;
+              &lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
+              &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+              &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+              &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+              &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+              &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+              &lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;
+            </pre>
+            <a href="https://www.w3schools.com/bootstrap/bootstrap_buttons.asp" class="btn btn-success btn-lg" role="button">Learn more >></a>
+          </div>
+
+        <div class="col-sm-6">
+            <br><br>
+          <h3 class="text-success" id="Tables">Tables</h3>
+          <p>A basic Bootstrap table has a light padding and only horizontal dividers.</p>
+          <h4>Example:<br><small class="text-primary">Bordered Table:</small></h4>
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>The .table-bordered class adds borders on all sides of the table and cells:</p>
+
+          <pre class="bg-light">
+            &lt;table class="table table-condensed"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+            &lt;td&gt;John@example.como&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;/table&gt;
+          </pre>
+          <a href="https://www.w3schools.com/bootstrap/bootstrap_tables.asp" class="btn btn-success btn-lg" role="button">Learn more >></a>
+          </div>
+
+          <div class="col-sm-6">
+              <br><br>
+            <h3 class="text-success" id="Images">Images</h3>
+            <h4>Example:<br><small class="text-primary">Bootstrap Image Shapes:</small></h4>
+            <h5>Rounded Corners:</h5>
+            <img src="800.jpeg" class="img-rounded" alt="SpongeBob SquarePants" width="304" height="236"> 
+            <p>The .img-rounded class adds rounded corners to an image (IE8 does not support rounded corners):</p>
+            <pre class="bg-light">
+                &lt;img src="..." class="img-rounded" alt="..."&gt;
+            </pre>
+            <br>
+            <h5>Circle:</h5>
+            <img src="800.jpeg" class="img-circle" alt="SpongeBob SquarePants" width="304" height="236"> 
+            <p>The .img-circle class shapes the image to a circle (IE8 does not support rounded corners):</p>
+            <pre class="bg-light">
+                &lt;img src="..." class="img-circle" alt="..."&gt;
+            </pre>
+            <br>
+            <h5>Thumbnail:</h5>
+            <img src="800.jpeg" class="img-thumbnail" alt="SpongeBob SquarePants" width="304" height="236"> 
+            <p>The .img-thumbnail class shapes the image to a thumbnail:</p>
+            <pre class="bg-light">
+                &lt;img src="..." class="img-thumbnail" alt="..."&gt;
+            </pre>
+            <a href="https://www.w3schools.com/bootstrap/bootstrap_images.asp" class="btn btn-success btn-lg" role="button">Learn more >></a>
+          </div>   
+</div>
+</div>
+</main> 
+</body>
 </html>
